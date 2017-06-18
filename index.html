@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        height: 900px;
+        font-size: 38px;
+
+    }
+    h3 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+    </style>
+    <title> JS 3 </title>
+</head>
+<body>
+
+   <ul id="user_list"></ul>
+
+    <script>
+        var x= document.getElementById('user_list')  
+        for(var i = 0; i <= 4; i++){
+           var name = prompt ("Enter the name"+i);
+           var listitem = document.createElement('li');
+           listitem.innerHTML = name;
+           x.appendChild(listitem);
+            
+        }
+
+ </script> 
+ 
+
+
+</body>
+</html>
+
